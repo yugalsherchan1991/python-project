@@ -122,6 +122,8 @@ print('done')
 
 
 # %%
+
+#Count the number of vowels and constant in a given word or sentence.
 school = 'Massachusetts Institute of Technology'
 numVowels = 0
 numCons = 0
@@ -138,6 +140,7 @@ for char in school:
 print('numVowels is: ' + str(numVowels))
 print('numCons is: ' + str(numCons)) 
 # %%
+
 #Finding the cube root of x 
 
 x = int(input('Enter the integer no:'))
@@ -265,3 +268,24 @@ print("No of for in the word is:" + str(noOfFor))
 
 
 # %%
+#when we assign a value to another variable stores the reference of the array
+#not like with simple integer where it stores the value of the integer
+a = [10,20]
+b = a
+b += [30,40]
+print(a)
+print(b)
+# %%
+a = 1 
+b = 2 
+c = b #this is a temporary value holder to interchange the vales
+b = a
+a = c
+print("a = ", a )
+print( "b = " ,b)
+
+
+# %%
+
+# %%
+
