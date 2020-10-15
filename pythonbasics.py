@@ -257,6 +257,7 @@ for char in range(len(s)):
     if s[char:char + 3] == "bob":
         noOfBob += 1  
 print("No of Bob in this word are:" + str(noOfBob))
+
 # %%
 #Find no of times a sting comes in a given word 
 nSting = "realgoingforgoingforrealreal"
@@ -266,6 +267,9 @@ for char in range(len(nSting)):
         noOfFor += 1
 print("No of for in the word is:" + str(noOfFor))    
 
+#%%
+
+#find out the longest substring of a given strign.
 
 # %%
 #when we assign a value to another variable stores the reference of the array
@@ -277,15 +281,68 @@ print(a)
 print(b)
 # %%
 a = 1 
-b = 2 
+b = 2
 c = b #this is a temporary value holder to interchange the vales
 b = a
 a = c
-print("a = ", a )
-print( "b = " ,b)
+print(a)
+print(b)
+
+# %%
+count = 0
+iteration = 0
+while iteration < 5:
+    for letter in "hello, world":
+        count += 1
+    print(str(iteration) + str(count))
+    iteration += 1
+
+# %%
+iteration = 0
+while iteration < 5:
+    count = 0 
+    for letter in "hello, world":
+        count += 1
+        print(iteration,count)
+        iteration += 1
+
 
 
 # %%
-
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+        if iteration % 2 == 0:
+            break
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
 # %%
+
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+# %%
+
+#Approximate soultion to finding cube of a floating point number
+
+cube = 23
+epsilon = 0.01
+guess = 0.0
+increment = 0.1
+num_guesses = 0
+while abs(guess ** 2 - cube) >= epsilon and guess <= cube:
+    guess += increment
+    num_guesses += 1
+print("Number of guesses: ", num_guesses)
+if abs (guess ** 2 -cube) >= epsilon:
+    print("Failed to find cube root of ", cube)
+else:
+    print(guess, "is close to the cube root of ", cube)
+ # %%
 
