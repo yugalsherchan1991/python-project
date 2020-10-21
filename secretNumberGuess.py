@@ -33,11 +33,28 @@ while True:
 
 # %%
 
+num1 = int(input())
+num2 = int(input())
+def solveMeFirst(a,b):
+    return num1 + num2
+solveMeFirst(num1,num2)
 
 
 
 
+# %%
+
+def solveMeFirst(a,b):
+
+    num1 = int(input())
+    num2 = int(input())
+    return num1 + num2 
+    res = solveMeFirst(num1,num2)
+
+print(solveMeFirst(2,3))
 
 
+
+# %%
 
 # %%

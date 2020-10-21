@@ -1,3 +1,4 @@
+
 #%%
 def evalQuadratic(a, b, c, x):
     '''
